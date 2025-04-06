@@ -1,11 +1,17 @@
 // script.js
-const links = document.querySelectorAll('.sidebar a');
-const contentArea = document.querySelector('.content');
+const sidebarItems = document.querySelectorAll('.sidebar ul li');
 
-links.forEach(link => {
-    link.addEventListener('click', function(e) {
-        e.preventDefault();
-        const course = link.textContent;
-        contentArea.innerHTML = `<h2>${course}</h2><p>This is the content for the course ${course}.</p>`;
+sidebarItems.forEach(item => {
+    item.addEventListener('click', function() {
+        const dropdown = item.querySelector('ul');
+        
+        if (dropdown) {
+            // Toggle display of dropdown
+            if (dropdown.style.display === 'block') {
+                dropdown.style.display = 'none'; // Hide if already visible
+            } else {
+                dropdown.style.display = 'block'; // Show if hidden
+            }
+        }
     });
 });
