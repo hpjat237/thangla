@@ -1,19 +1,88 @@
+/* General reset and styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-    color: #333;
 }
 
+/* Header Styling */
 header {
     background-color: #4CAF50;
-    padding: 20px;
-    text-align: center;
     color: white;
+    padding: 15px 0;
+    text-align: center;
 }
 
+header .header-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header .account button {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/* Main content area with Sidebar and Content */
+.main-container {
+    display: flex;
+    margin: 20px;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: 250px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.sidebar ul li a:hover {
+    color: #4CAF50;
+}
+
+/* Content Styling */
+.content {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Styling */
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #4CAF50;
+    background-color: #333;
     color: white;
 }
