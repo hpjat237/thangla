@@ -35,7 +35,7 @@ footer {
     padding: 10px;
     background-color: #333;
     color: white;
-    z-index: 6; /* Đưa footer lên trên sidebar bằng cách tăng z-index */
+    z-index: 10; /* Đưa footer lên trên sidebar bằng cách tăng z-index */
 }
 
 header .header-content {
