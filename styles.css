@@ -52,24 +52,41 @@ header .account .ant-btn {
 /* Sidebar Styling */
 .sidebar {
     position: fixed;
-    top: 60px; /* Adjust sidebar to start below the header */
+    top: 60px; /* Đảm bảo sidebar bắt đầu dưới header */
     left: 0;
-    width: 250px;
+    width: 250px; /* Giảm chiều rộng của sidebar xuống 220px */
     background-color: #fff;
-    padding: 20px;
+    padding: 15px; /* Giảm padding bên trong sidebar */
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    height: 80%;
-    max-height: calc(100vh - 60px);
+    height: calc(100vh - 60px); /* Điều chỉnh chiều cao sidebar sao cho vừa đủ với chiều cao cửa sổ */
     z-index: 5;
+    overflow-y: auto;
 }
 
-/* Remove outline around links */
+/* Sidebar links và menu */
 .sidebar ul li a {
     text-decoration: none;
-    color: black; /* Set text color to black */
-    font-weight: normal; /* Remove bold text */
-    outline: none; /* Remove blue outline when clicked */
+    color: black;
+    font-weight: normal;
+    outline: none;
+    font-size: 14px; /* Giảm kích thước chữ trong sidebar */
 }
+
+/* Điều chỉnh các mục menu khi hover */
+.sidebar ul li a:hover {
+    color: #4CAF50; /* Màu khi hover */
+}
+
+/* Điều chỉnh các phần tử danh sách trong sidebar */
+.sidebar ul li {
+    background-color: #fff;
+    color: black;
+    padding: 10px;
+    position: relative;
+    cursor: pointer;
+    list-style-image: url('icon.png');
+}
+
 
 /* Content Styling */
 .content {
