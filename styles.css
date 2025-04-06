@@ -122,7 +122,13 @@ header .account button {
     padding: 20px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
-
+/* Thêm CSS cho các phần tử <p> */
+.content p {
+    margin: 10px 0;
+    line-height: 1.6; /* Tăng khoảng cách dòng để nội dung dễ đọc */
+    font-size: 16px; /* Đảm bảo kích thước chữ phù hợp */
+    color: #333; /* Màu chữ */
+}
 /* Footer Styling */
 footer {
     text-align: center;
