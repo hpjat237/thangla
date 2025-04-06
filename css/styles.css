@@ -131,7 +131,7 @@ footer:hover {
     transform: translateY(-50%); /* Căn giữa icon theo chiều dọc */
     width: 14px; /* Kích thước icon bằng với kích thước chữ */
     height: 14px; /* Kích thước icon bằng với kích thước chữ */
-    background-image: url('icon.png'); /* Đặt đường dẫn tới icon */
+    background-image: url('assets/images/icon.png'); /* Đặt đường dẫn tới icon */
     background-size: cover; /* Đảm bảo icon được thu nhỏ đúng tỷ lệ */
     background-repeat: no-repeat; /* Không lặp lại icon */
     transition: all 0.3s ease; /* Smooth transition for icon position */
