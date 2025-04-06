@@ -1,5 +1,4 @@
-console.log("Welcome to my website!");
-
+// script.js
 const links = document.querySelectorAll('.sidebar a');
 const contentArea = document.querySelector('.content');
 

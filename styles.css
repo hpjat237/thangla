@@ -66,12 +66,12 @@ a {
 
 /* Style for the dropdown container */
 li ul {
-    display: none;
+    display: none; /* Hide dropdown by default */
     position: absolute;
-    top: 100%;
+    top: 100%; /* Position it below the parent list item */
     left: 0;
     background-color: #4CAF50;
-    min-width: 160px;
+    min-width: 160px; /* Set the width for the dropdown */
 }
 
 /* Style for the dropdown items */
@@ -85,7 +85,7 @@ li ul li:hover {
 
 /* Display dropdown menu when hovering over the list item */
 li:hover > ul {
-    display: block;
+    display: block; /* Show dropdown when hover */
 }
 
 /* Content Styling */
