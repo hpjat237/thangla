@@ -27,6 +27,16 @@ header {
     z-index: 10;
 }
 
+footer {
+    position: relative; /* Thay thế 'fixed' bằng 'relative' để footer không bị cố định */
+    bottom: auto; /* Bỏ giá trị 'bottom: 0' */
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
 header .header-content {
     display: flex;
     justify-content: space-between;
@@ -134,13 +144,4 @@ header .account .ant-btn {
     overflow-y: auto;
 }
 
-/* Footer Styling */
-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: white;
-}
+
