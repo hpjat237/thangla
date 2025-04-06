@@ -84,7 +84,6 @@ footer:hover {
 
 /* Hover effect for sidebar */
 .sidebar:hover {
-    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
     transform: translateX(5px); /* Slightly shift sidebar on hover */
 }
 
