@@ -6,6 +6,79 @@ links.forEach(link => {
     link.addEventListener('click', function(e) {
         e.preventDefault();
         const course = link.textContent;
-        contentArea.innerHTML = `<h2>${course}</h2><p>This is the content for the course ${course}.</p>`;
+        contentArea.innerHTML = `<h2>${course}</h2><p>This is the content for the course
+        This is the content for the course
+        This is the content for the course
+        This is the content for the course
+        This is the content for the course
+        This is the content for the course
+        This is the content for the course
+        This is the content for the course
+        This is the content for the course
+        This is the content for the course
+        This is the content for the course
+        This is the content for the course
+        This is the content for the course
+        This is the content for the course
+        This is the content for the course
+        This is the content for the course
+        This is the content for the course
+        This is the content for the course
+        This is the content for the course
+        This is the content for the course
+        This is the content for the course
+        This is the content for the course
+        This is the content for the course
+        This is the content for the course
+        This is the content for the course
+        This is the content for the course
+        This is the content for the course
+        This is the content for the course
+        This is the content for the course
+        This is the content for the course
+        This is the content for the course
+        This is the content for the course
+        This is the content for the course
+        This is the content for the course
+        This is the content for the course
+        This is the content for the course
+        This is the content for the course
+        This is the content for the course
+        This is the content for the course
+        This is the content for the course
+        This is the content for the course
+        This is the content for the course
+        This is the content for the course
+        This is the content for the course
+        This is the content for the course
+        This is the content for the course
+        This is the content for the course
+        This is the content for the course
+        This is the content for the course
+        This is the content for the course
+        This is the content for the course
+        This is the content for the course
+        This is the content for the course
+        This is the content for the course
+        This is the content for the course
+        This is the content for the course
+        This is the content for the course
+        This is the content for the course
+        This is the content for the course
+        This is the content for the course
+        This is the content for the course
+        This is the content for the course
+        This is the content for the course
+        This is the content for the course
+        This is the content for the course
+        This is the content for the course
+        This is the content for the course
+        This is the content for the course
+        This is the content for the course
+        This is the content for the course
+        This is the content for the course
+        This is the content for the course
+        This is the content for the course
+         ${course}.</p>`;
     });
 });
