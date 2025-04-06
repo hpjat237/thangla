@@ -77,17 +77,36 @@ header .account .ant-btn {
 
 /* Điều chỉnh các phần tử danh sách trong sidebar */
 .sidebar ul li {
+    background-color: #fff;
     color: black;
     padding: 10px;
     position: relative;
     cursor: pointer;
+    list-style-type: none; /* Tắt kiểu danh sách mặc định */
+    padding-left: 30px; /* Thêm không gian bên trái để chứa icon */
+    font-size: 14px; /* Kích thước chữ */
 }
 
+/* Thêm icon dưới dạng background và điều chỉnh kích thước */
+.sidebar ul li::before {
+    content: "";
+    position: absolute;
+    left: 10px; /* Vị trí của icon */
+    top: 50%;
+    transform: translateY(-50%); /* Căn giữa icon theo chiều dọc */
+    width: 14px; /* Kích thước icon bằng với kích thước chữ */
+    height: 14px; /* Kích thước icon bằng với kích thước chữ */
+    background-image: url('icon.png'); /* Đặt đường dẫn tới icon */
+    background-size: cover; /* Đảm bảo icon được thu nhỏ đúng tỷ lệ */
+    background-repeat: no-repeat; /* Không lặp lại icon */
+}
 
 /* Content Styling */
 .content {
     flex: 1;
     margin-left: 250px;
+    background-color: white;
+    padding: 20px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
