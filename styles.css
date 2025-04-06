@@ -69,28 +69,15 @@ header .account button {
     border: none; /* Remove green border around sidebar */
 }
 
-.sidebar ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.sidebar ul li {
-    background-color: #fff; /* Set background of list items */
-    color: black; /* Change text color to black */
-    padding: 10px;
-    position: relative;
-    cursor: pointer;
-    font-weight: normal; /* Remove bold text */
-}
-
-/* Style for dropdown links */
+/* Remove outline around links */
 .sidebar ul li a {
     text-decoration: none;
     color: black; /* Set text color to black */
     font-weight: normal; /* Remove bold text */
+    outline: none; /* Remove blue outline when clicked */
 }
 
+/* Style for dropdown links */
 .sidebar ul li a:hover {
     color: #4CAF50; /* Change text color when hover */
 }
