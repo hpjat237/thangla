@@ -46,7 +46,7 @@ header .account .ant-btn {
 .main-container {
     display: flex;
     flex: 1;
-    margin: 0;
+    margin-top: 60px; /* Ensure content starts below header */
 }
 
 /* Sidebar Styling */
@@ -59,6 +59,8 @@ header .account .ant-btn {
     height: calc(100vh - 60px); /* Điều chỉnh chiều cao sidebar sao cho vừa đủ với chiều cao cửa sổ */
     z-index: 5;
     overflow-y: auto;
+    background-color: white;
+    border-right: 1px solid #ddd; /* Để phân tách giữa sidebar và nội dung */
 }
 
 /* Sidebar links và menu */
@@ -119,6 +121,17 @@ header .account .ant-btn {
     padding: 10px;
     background-color: #4CAF50;
     color: white;
+}
+
+/* Content Styling */
+.content {
+    margin-left: 250px; /* Đảm bảo nội dung không bị che bởi sidebar */
+    padding: 20px;
+    background-color: white;
+    flex: 1;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    height: calc(100vh - 60px); /* Đảm bảo nội dung không bị tràn ra ngoài */
+    overflow-y: auto;
 }
 
 /* Footer Styling */
