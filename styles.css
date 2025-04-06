@@ -38,6 +38,17 @@ header .logo {
     font-weight: bold;
 }
 
+/* Footer Styling */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
 header .account button {
     background-color: transparent;
     border: 1px solid white;
@@ -142,15 +153,4 @@ header .account button {
     padding: 20px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
     overflow-y: auto;
-}
-
-/* Footer Styling */
-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: white;
 }
