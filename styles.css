@@ -45,13 +45,21 @@ header .account button {
 }
 
 /* Sidebar Styling */
-ul {
+.sidebar {
+    width: 250px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+}
+
+.sidebar ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
-li {
+.sidebar ul li {
     background-color: #4CAF50;
     color: white;
     padding: 10px;
@@ -59,33 +67,52 @@ li {
     cursor: pointer;
 }
 
-a {
-    color: white;
+/* Style for dropdown links */
+.sidebar ul li a {
     text-decoration: none;
+    color: white;
+    font-weight: bold;
 }
 
-/* Style for the dropdown container */
-li ul {
+.sidebar ul li a:hover {
+    color: #ffffff;
+}
+
+/* Dropdown container - Initially hidden */
+.sidebar ul li ul {
     display: none; /* Hide dropdown by default */
     position: absolute;
     top: 100%; /* Position it below the parent list item */
     left: 0;
     background-color: #4CAF50;
-    min-width: 160px; /* Set the width for the dropdown */
+    min-width: 160px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 0;
 }
 
-/* Style for the dropdown items */
-li ul li {
+.sidebar ul li:hover > ul {
+    display: block; /* Show dropdown when hovering over parent li */
+}
+
+/* Dropdown items */
+.sidebar ul li ul li {
     padding: 10px;
+    background-color: #4CAF50;
+    color: white;
 }
 
-li ul li:hover {
+.sidebar ul li ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.sidebar ul li ul li:hover {
     background-color: #45a049;
 }
 
-/* Display dropdown menu when hovering over the list item */
-li:hover > ul {
-    display: block; /* Show dropdown when hover */
+.sidebar ul li ul li a:hover {
+    color: #fff;
 }
 
 /* Content Styling */
