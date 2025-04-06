@@ -66,6 +66,7 @@ header .account button {
     height: calc(100vh - 60px); /* Full height minus header height */
     z-index: 5;
     overflow-y: auto;
+    border: none; /* Xóa màu viền bao quanh sidebar */
 }
 
 .sidebar ul {
@@ -75,22 +76,23 @@ header .account button {
 }
 
 .sidebar ul li {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #fff; /* Đặt màu nền của các mục trong sidebar */
+    color: black; /* Chỉnh màu chữ thành đen */
     padding: 10px;
     position: relative;
     cursor: pointer;
+    font-weight: normal; /* Bỏ in đậm chữ */
 }
 
 /* Style for dropdown links */
 .sidebar ul li a {
     text-decoration: none;
-    color: white;
-    font-weight: bold;
+    color: black; /* Chỉnh màu chữ thành đen */
+    font-weight: normal; /* Xóa in đậm chữ */
 }
 
 .sidebar ul li a:hover {
-    color: #ffffff;
+    color: #4CAF50; /* Đổi màu chữ khi hover */
 }
 
 /* Dropdown container - Initially hidden */
@@ -143,6 +145,9 @@ header .account button {
 
 /* Footer Styling */
 footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     text-align: center;
     padding: 10px;
     background-color: #333;
