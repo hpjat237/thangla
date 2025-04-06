@@ -38,12 +38,7 @@ header .logo {
     font-weight: bold;
 }
 
-header .account button {
-    background-color: transparent;
-    border: 1px solid white;
-    color: white;
-    padding: 10px 15px;
-    cursor: pointer;
+header .account .ant-btn {
     margin-left: 10px;
 }
 
@@ -63,11 +58,9 @@ header .account button {
     background-color: #fff;
     padding: 20px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    height: 80%; /* Limit the sidebar's height to 80% of the screen */
-    max-height: calc(100vh - 60px); /* Make sure the sidebar doesn't overlap the footer */
+    height: 80%;
+    max-height: calc(100vh - 60px);
     z-index: 5;
-    overflow-y: auto;
-    border: none; /* Remove green border around sidebar */
 }
 
 /* Remove outline around links */
@@ -78,82 +71,13 @@ header .account button {
     outline: none; /* Remove blue outline when clicked */
 }
 
-/* Style for dropdown links */
-.sidebar ul li a:hover {
-    color: #4CAF50; /* Change text color when hover */
-}
-
-/* Dropdown container - Initially hidden */
-.sidebar ul li ul {
-    display: none; /* Hide dropdown by default */
-    position: relative;
-    top: 0;
-    left: 0;
-    background-color: #4CAF50;
-    min-width: 160px;
-    padding: 0;
-    margin-top: 10px;
-}
-
-/* Dropdown items */
-.sidebar ul li ul li {
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
-}
-
-.sidebar ul li ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 5px;
-}
-
-.sidebar ul li ul li:hover {
-    background-color: #45a049;
-}
-
-.sidebar ul li ul li a:hover {
-    color: #fff;
-}
-
-/* Arrow for dropdown */
-.sidebar ul li:after {
-    content: '>';
-    position: absolute;
-    right: 20px;
-    top: 15px;
-    font-size: 16px;
-}
-
-/* Rotate arrow when dropdown is active */
-.sidebar ul li.active:after {
-    content: 'v'; /* Change the arrow to a downward one when dropdown is open */
-}
-
-/* New class for active dropdown */
-.sidebar ul li ul.active {
-    display: block; /* Show dropdown when active */
-}
-
-/* Set the icon as a list item marker */
-.sidebar ul li {
-    background-color: #fff; /* Set background of list items */
-    color: black; /* Change text color to black */
-    padding: 10px;
-    position: relative;
-    cursor: pointer;
-    font-weight: normal; /* Remove bold text */
-    list-style-image: url('icon.png'); /* Set custom icon for list items */
-}
-
 /* Content Styling */
 .content {
     flex: 1;
-    margin-left: 250px; /* Offset the content by sidebar width */
+    margin-left: 250px;
     background-color: white;
     padding: 20px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    overflow-y: auto;
 }
 
 /* Footer Styling */

@@ -6,6 +6,11 @@
     <title>Thang La Website</title>
     <link rel="icon" href="icon.png" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
+    <!-- Add Ant Design CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/antd@4.16.13/dist/antd.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/react@17.0.2/umd/react.production.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/antd@4.16.13/dist/antd.min.js"></script>
 </head>
 <body>
 
@@ -14,8 +19,8 @@
         <div class="header-content">
             <div class="logo">Thang La</div>
             <div class="account">
-                <button>Account</button>
-                <button>Search</button>
+                <button class="ant-btn ant-btn-primary">Account</button>
+                <button class="ant-btn ant-btn-default">Search</button>
             </div>
         </div>
     </header>
@@ -24,8 +29,8 @@
     <div class="main-container">
         <!-- Sidebar -->
         <aside class="sidebar">
-            <ul>
-                <li>
+            <ul class="ant-menu">
+                <li class="ant-menu-item">
                     Năm 1 Học Kì 1
                     <ul>
                         <li><a href="#">Đại số tuyến tính và cấu trúc đại số</a></li>
@@ -35,7 +40,7 @@
                 </li>
 
                 <!-- Năm 1 Học Kì 2 -->
-                <li>
+                <li class="ant-menu-item">
                     Năm 1 Học Kì 2
                     <ul>
                         <li><a href="#">Điện tử căn bản</a></li>
@@ -47,7 +52,7 @@
                 </li>
 
                 <!-- Năm 2 Học Kì 1 -->
-                <li>
+                <li class="ant-menu-item">
                     Năm 2 Học Kì 1
                     <ul>
                         <li><a href="#">Cấu trúc dữ liệu và giải thuật</a></li>
@@ -58,7 +63,7 @@
                 </li>
 
                 <!-- Năm 2 Học Kì 2 -->
-                <li>
+                <li class="ant-menu-item">
                     Năm 2 Học Kì 2
                     <ul>
                         <li><a href="#">Cơ sở dữ liệu</a></li>
@@ -69,7 +74,7 @@
                 </li>
 
                 <!-- Năm 3 Học Kì 1 -->
-                <li>
+                <li class="ant-menu-item">
                     Năm 3 Học Kì 1
                     <ul>
                         <li><a href="#">An toàn thông tin</a></li>
@@ -80,7 +85,7 @@
                 </li>
 
                 <!-- Năm 3 Học Kì 2 -->
-                <li>
+                <li class="ant-menu-item">
                     Năm 3 Học Kì 2
                     <ul>
                         <li><a href="#">Điện toán đám mây</a></li>
@@ -94,7 +99,7 @@
 
         <!-- Content Area -->
         <div class="content">
-            <h2>Đại số tuyến tính và cấu trúc đại số</h2>
+            <h2 class="ant-typography">Đại số tuyến tính và cấu trúc đại số</h2>
             <p>Here will be the content for each lesson and tutorial.</p>
             <p>Here will be the content for each lesson and tutorial.</p>
             <p>Here will be the content for each lesson and tutorial.</p>
