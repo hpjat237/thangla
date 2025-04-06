@@ -6,12 +6,8 @@ sidebarItems.forEach(item => {
         const dropdown = item.querySelector('ul');
         
         if (dropdown) {
-            // Toggle display of dropdown
-            if (dropdown.style.display === 'block') {
-                dropdown.style.display = 'none'; // Hide if already visible
-            } else {
-                dropdown.style.display = 'block'; // Show if hidden
-            }
+            // Toggle class to show or hide dropdown
+            dropdown.classList.toggle('active');
         }
     });
 });

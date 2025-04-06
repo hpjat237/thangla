@@ -123,6 +123,11 @@ header .account button {
     color: #fff;
 }
 
+/* New class for active dropdown */
+.sidebar ul li ul.active {
+    display: block; /* Show dropdown when active */
+}
+
 /* Content Styling */
 .content {
     flex: 1;
