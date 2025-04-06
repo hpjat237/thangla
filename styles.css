@@ -66,7 +66,7 @@ header .account button {
     height: calc(100vh - 60px); /* Full height minus header height */
     z-index: 5;
     overflow-y: auto;
-    border: none; /* Xóa màu viền bao quanh sidebar */
+    border: none; /* Remove green border around sidebar */
 }
 
 .sidebar ul {
@@ -76,23 +76,23 @@ header .account button {
 }
 
 .sidebar ul li {
-    background-color: #fff; /* Đặt màu nền của các mục trong sidebar */
-    color: black; /* Chỉnh màu chữ thành đen */
+    background-color: #fff; /* Set background of list items */
+    color: black; /* Change text color to black */
     padding: 10px;
     position: relative;
     cursor: pointer;
-    font-weight: normal; /* Bỏ in đậm chữ */
+    font-weight: normal; /* Remove bold text */
 }
 
 /* Style for dropdown links */
 .sidebar ul li a {
     text-decoration: none;
-    color: black; /* Chỉnh màu chữ thành đen */
-    font-weight: normal; /* Xóa in đậm chữ */
+    color: black; /* Set text color to black */
+    font-weight: normal; /* Remove bold text */
 }
 
 .sidebar ul li a:hover {
-    color: #4CAF50; /* Đổi màu chữ khi hover */
+    color: #4CAF50; /* Change text color when hover */
 }
 
 /* Dropdown container - Initially hidden */
@@ -126,6 +126,20 @@ header .account button {
 
 .sidebar ul li ul li a:hover {
     color: #fff;
+}
+
+/* Arrow for dropdown */
+.sidebar ul li:after {
+    content: '>';
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 16px;
+}
+
+/* Rotate arrow when dropdown is active */
+.sidebar ul li.active:after {
+    content: 'v'; /* Change the arrow to a downward one when dropdown is open */
 }
 
 /* New class for active dropdown */
