@@ -1,0 +1,41 @@
+<!-- Header -->
+<header>
+    <div class="header-content">
+        <div class="logo">Thang La</div>
+        <div class="account">
+            <!-- Đăng nhập form -->
+            <button class="ant-btn ant-btn-primary" id="loginButton">Login</button>
+        </div>
+    </div>
+</header>
+
+<div id="loginFormContainer" style="display: none;">
+    <div class="ant-modal-mask" style="display: block;"></div>
+    <div class="ant-modal-wrap" style="display: block;">
+        <div class="ant-modal">
+            <div class="ant-modal-content">
+                <div class="ant-modal-header">
+                    <button type="button" class="ant-modal-close" aria-label="Close" onclick="toggleLoginForm()">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                    <h4 class="ant-modal-title">Login</h4>
+                </div>
+                <div class="ant-modal-body">
+                    <form>
+                        <div class="ant-form-item">
+                            <input id="username" type="text" placeholder="Username" class="ant-input" required>
+                        </div>
+                        <div class="ant-form-item">
+                            <input id="password" type="password" placeholder="Password" class="ant-input" required>
+                        </div>
+                        <div class="ant-form-item">
+                            <button type="submit" class="ant-btn ant-btn-primary" onclick="handleLogin()">Login</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/script.js"></script> <!-- Link tới script.js -->

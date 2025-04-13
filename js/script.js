@@ -19,3 +19,30 @@ sidebarItems.forEach(item => {
         }
     });
 });
+
+// Tạo sự kiện cho nút Login để hiển thị form đăng nhập
+document.getElementById('loginButton').addEventListener('click', toggleLoginForm);
+
+// Hiển thị hoặc ẩn form đăng nhập khi nhấn nút
+function toggleLoginForm() {
+    const loginForm = document.getElementById('loginFormContainer');
+    loginForm.style.display = (loginForm.style.display === 'none' || loginForm.style.display === '') ? 'block' : 'none';
+}
+
+// Thực hiện đăng nhập (tạm thời, không có backend ở đây)
+function handleLogin(event) {
+    event.preventDefault(); // Ngừng hành động mặc định của form (không làm reload trang)
+
+    // Lấy dữ liệu từ form
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+
+    // Tạm thời kiểm tra đăng nhập
+    if (username === 'admin' && password === '1234') {
+        alert('Login successful!');
+        toggleLoginForm();  // Đóng form khi đăng nhập thành công
+    } else {
+        alert('Invalid credentials!');
+    }
+}
+
